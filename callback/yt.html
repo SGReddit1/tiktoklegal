@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>YouTube OAuth Callback</h2>
+    <p>Copy the code below and paste it into your script:</p>
+    <pre id="code"></pre>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("code").textContent = params.get("code") || "No code found.";
+    </script>
+  </body>
+</html>
